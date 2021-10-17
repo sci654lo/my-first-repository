@@ -1,0 +1,142 @@
+/*|| Style général */
+*, html
+{
+	box-sizing: border-box;
+}
+
+
+body
+{
+	background-color: #fff;
+	font: normal 1rem 'Merriweather', serif;
+	color: #000;
+	width: 90vw;
+	max-height: fit-content;
+	margin: 0 auto;
+	position: relative;
+	overflow: visible;
+	
+}
+
+header
+{
+	background-color: hsla(220, 100%, 50%, 0.8);
+	color: #fff;
+	font: inherit;
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	padding: 1em;
+	width: 90vw;
+}
+
+
+main
+{
+	background-color: #f7f7f7;
+	box-shadow: 30px 30px 50px #d0d0d0;
+	padding: 1.5em;
+	width: 100%;
+	margin-top: 15%;
+	max-height: 60%;
+	overflow: visible;
+}
+
+
+footer
+{
+	background-color: #222;
+	color: #fff;
+	font: inherit;
+	width: 100%;
+	min-height: 30%;
+	padding: 2em 1em;
+	margin-top: 10%;
+}
+
+a
+{
+	text-decoration: none;
+	color: #fff;
+	font: inherit;
+}
+
+li
+{
+	list-style-type: none;
+	line-height: 1.2em;
+}
+
+article
+{
+	margin-right: 2%;
+	padding: 1.2em;
+	border-right: 1px inset #d0d0d0;
+}
+article p
+{
+	text-align: justify;
+	font-size: 0.8em;
+}
+
+aside
+{
+	padding: 1.2em;
+}
+
+
+
+/*|| Composants */
+.flex_box
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav_group a
+{
+	display: inline-block;
+	padding: auto;
+	margin-right: 1.2em;
+	margin-top: 2em;
+}
+
+.float
+{
+	float: left;
+	margin-right: 3%;
+	width: 40%;
+	height: auto;
+}
+
+/* ClearFix Hack */
+.clear, .clear:after
+{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.grid
+{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 20px;
+}
+.photos img
+{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.photos
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1px;
+}
+.item_self
+{
+	align-self: flex-end;
+}
